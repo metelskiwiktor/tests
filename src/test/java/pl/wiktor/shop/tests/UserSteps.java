@@ -2,6 +2,7 @@ package pl.wiktor.shop.tests;
 
 import io.cucumber.java.bs.A;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class UserSteps {
@@ -20,9 +21,13 @@ public class UserSteps {
         this.password = password;
     }
 
-    @When("I register my account")
+    @When("I send request to register my account")
     public void iRegisterMyAccount() {
         this.account = new Account(login, password);
 
+    }
+
+    @Then("I got status {string} and return message {string}")
+    public void iGotStatusAndReturnMessage(String status, String returnMessage) {
     }
 }

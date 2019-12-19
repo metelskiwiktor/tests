@@ -2,8 +2,9 @@ Feature: User should register, login and change password
 
   Scenario Outline: User should register
     Given login "<login>" and password "<password>"
-    When I register my account
+    When I send request to register my account
+    Then I got status "<status>" and return message "<return message>"
 
     Examples:
-      | login  | password       |
-      | wiktor | wiktorpassword |
+      | login  | password       | status | return message              |
+      | wiktor | wiktorpassword | OK     | account has been registered |
