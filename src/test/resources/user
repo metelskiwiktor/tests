@@ -1,0 +1,9 @@
+Feature: User should register, login and change password
+
+  Scenario Outline: User should register
+    Given login "<login>" and password "<password>"
+    When I register my account
+
+    Examples:
+      | login  | password       |
+      | wiktor | wiktorpassword |
