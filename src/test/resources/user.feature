@@ -7,4 +7,4 @@ Feature: User should register, login and change password
 
     Examples:
       | login  | password       | status | return message              |
-      | wiktor | wiktorpassword | OK     | account has been registered |
+      | wiktor2 | wiktorpassword | OK     | account has been registered |

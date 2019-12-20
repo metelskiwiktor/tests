@@ -1,6 +1,7 @@
 package pl.wiktor.shop.tests;
 
 public class Account {
+    private int id = 1;
     private String login;
     private String password;
 
